@@ -23,5 +23,21 @@ ul{
 
 ul li{
   display: inline-block;
-  
+}
+
+#calendar{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.progress{
+  background-color: rgb(211, 211, 211);
+  border-radius: 5px;
+}
+
+.progress-bar{
+  height: 25px;
+  background-color: rgb(148, 206, 148);
+  border-radius: 5px;
 }
