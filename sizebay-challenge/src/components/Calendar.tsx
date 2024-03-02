@@ -1,5 +1,5 @@
 var dateObject = new Date();
-var day = dateObject.getUTCDate();
+var day = dateObject.getUTCDate().toString().padStart(2, '0');
 var date = dateObject.getUTCDay() + 1;
 var month = dateObject.getUTCMonth() + 1;
 var year = dateObject.getUTCFullYear();

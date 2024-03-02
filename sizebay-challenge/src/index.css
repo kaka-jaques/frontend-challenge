@@ -11,33 +11,122 @@ code {
 }
 
 p, h1, h2, h3{
-  color: gray;
-  margin: 0;
+  color: gray !important;
+  margin: 0 !important;
 }
 
 ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  list-style-type: none !important;
+  margin: 0 !important ;
+  padding: 0 !important;
 }
 
 ul li{
-  display: inline-block;
+  display: inline-block !important;
 }
 
 #calendar{
-  display: flex;
-  align-items: center;
-  width: 100%;
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
 }
 
 .progress{
-  background-color: rgb(211, 211, 211);
-  border-radius: 5px;
+  background-color: rgb(211, 211, 211) !important;
+  border-radius: 5px !important;
+  height: 25px;
 }
 
 .progress-bar{
-  height: 25px;
-  background-color: rgb(148, 206, 148);
-  border-radius: 5px;
+  background-color: rgb(119, 230, 119) !important;
+  border-radius: 5px !important;
+}
+
+#task-functions{
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  #buttons{
+    width: 30%;
+  }
+  button{
+    font-size: 15px;
+    background-color: white !important;
+    border-color: rgb(211, 211, 211) !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    padding: 15px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    border-radius: 25px !important;
+    font-family: apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif !important;
+    color: rgb(155, 155, 155) !important;
+    margin-right: 10px !important;
+    cursor: pointer !important;
+    transition: 0.2s ease-in-out !important;
+  }
+  button:hover{
+    border-color: rgb(103, 145, 194) !important;
+    color: rgb(103, 145, 194) !important;
+  }
+  #search-box{
+    width: 70% !important;
+    margin-left: 40px !important;
+    position: relative !important;
+  }
+  input{
+    font-family: apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif !important;
+    border-color: rgb(211, 211, 211) !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-radius: 5px !important; 
+    padding: 8px !important;
+    padding-right: 20px !important;
+    padding-left: 15px !important;
+    width: 99% !important;
+    font-size: 15px;
+  }
+  #search{
+    position: absolute !important;
+    color: rgb(155, 155, 155) !important;
+    border-style: none !important;
+    padding: 0 !important;
+    right: 0px !important;
+    top: 17px !important;
+  }
+  .fa-magnifying-glass{
+    color: rgb(155, 155, 155);
+    width: 20px;
+    height: 20px;
+  }
+}
+
+#task-adiction{
+  width: 100%;
+  position: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  button{ 
+    color: rgba(255, 255, 255, 0.548);
+    border-style: none;
+    background-color: transparent;
+    height: 40px;
+    width: 25px;
+    padding: 0;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+  }
+  button:hover{
+    color: rgb(255, 255, 255);
+  }
+  .input-group-text{
+    background-color: rgb(182, 209, 211);
+  }
+  .fa-circle-plus{
+    height: 25px;
+    padding-top: 5px;
+  }
 }
